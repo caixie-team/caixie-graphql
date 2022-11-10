@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    //    "baseUrl": ".",
+//    "rootDir": ".",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "lib": ["esnext", "es2017", "dom"],
+    "module": "es2015",
+    "declaration": true,
+    "declarationMap": true,
+//    "declarationDir": "dist/types",
+    "sourceMap": true,
+//    "outDir": "dist/lib",
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": ["node_modules/@types"],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "downlevelIteration": true,
+    "jsx": "preserve",
+    "strictPropertyInitialization": false,
+    "newLine": "LF",
+    "resolveJsonModule": true
+//    "paths": {
+//      "@/*": ["packages/*/src"],
+//      "~/*": ["packages/*/test"]
+//    }
+  },
+//  "include": ["packages/*/src", "packages/*/tests"],
+//  "exclude": ["jest.config.js"]
+}

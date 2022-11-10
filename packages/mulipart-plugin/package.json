@@ -1,0 +1,33 @@
+{
+  "name": "@cxql/mulipart-plugin",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "watch": "tsc -p ./tsconfig.build.json -w",
+    "build": "rimraf lib && tsc -p ./tsconfig.build.json",
+    "lint": "tslint --fix --project ./",
+    "test": "jest --config ./jest.config.js",
+    "ci": "pnpm build"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@cxql/core": "workspace:0.1.0",
+    "@cxql/shared": "workspace:*",
+    "rimraf": "^3.0.2"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

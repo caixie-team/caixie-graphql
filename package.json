@@ -1,0 +1,63 @@
+{
+  "name": "cxql",
+  "version": "0.1.0",
+  "private": true,
+  "description": "支持 vue3、Taro、Uni 的简单高效的 Graphql Client",
+  "author": {
+    "name": "Baisheng",
+    "email": "baisheng@gmail.com",
+    "url": "https://github.com/baisheng"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/caixie-team/caixie-graphql",
+  "repository": {
+    "url": "https://github.com/caixie-team/caixie-graphql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caixie-team/caixie-graphql/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "pnpm --filter=@cxql/* run build",
+    "lint": "eslint . --fix",
+    "commit": "caixie git-commit",
+    "esno": "esno",
+    "cleanup": "esno ./scripts/cleanup.ts",
+    "update-pkg": "ncu --deep -u",
+    "update-version": "bumpp package.json packages/*/package.json",
+    "publish-pkg": "pnpm -r publish --access public",
+    "release": "pnpm update-version && pnpm publish-pkg",
+    "sync-pkg": "esno ./scripts/sync.ts",
+    "prepare": "pnpm -r run stub && husky install"
+  },
+  "devDependencies": {
+    "@caixiejs/cli": "^0.1.0",
+    "@graphql-typed-document-node/core": "^3.1.1",
+    "@types/extract-files": "^8.1.1",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^29.2.2",
+    "@types/node-fetch": "^2.6.2",
+    "@vue/compiler-sfc": "^3.2.44",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.26.0",
+    "eslint-config-caixiejs": "^0.1.1",
+    "esno": "^0.16.3",
+    "extract-files": "^13.0.0",
+    "flush-promises": "^1.0.2",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "gzip-size": "^7.0.0",
+    "husky": "^8.0.1",
+    "msw": "^0.48.1",
+    "node-fetch": "^3.2.10",
+    "npm-check-updates": "^16.3.16",
+    "rimraf": "^3.0.2",
+    "terser": "^5.15.1",
+    "typescript": "^4.8.4",
+    "vue": "^3.2.44",
+    "wait-for-expect": "^3.0.2",
+    "zx": "^7.1.1"
+  }
+}
