@@ -26,15 +26,7 @@
   "scripts": {
     "build": "rimraf dist && tsc -p ./tsconfig.build.json",
     "lint": "eslint . --fix",
-    "commit": "caixie git-commit",
-    "esno": "esno",
-    "cleanup": "esno ./scripts/cleanup.ts",
-    "update-pkg": "ncu --deep -u",
-    "update-version": "bumpp package.json packages/*/package.json",
-    "publish-pkg": "pnpm -r publish --access public",
-    "release": "pnpm update-version && pnpm publish-pkg",
-    "sync-pkg": "esno ./scripts/sync.ts",
-    "prepare": "pnpm -r run stub && husky install"
+    "ci": "pnpm build"
   },
   "dependencies": {
     "@cxql/shared": "workspace:0.1.0"
