@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['caixiejs']
+  extends: ['caixiejs'],
+  rules: {
+    // '@typescript-eslint/ban-ts-comment': 'off'
+  }
 };

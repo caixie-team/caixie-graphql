@@ -7,11 +7,6 @@
     "email": "baisheng@gmail.com",
     "url": "https://github.com/baisheng"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*"
-  ],
   "license": "MIT",
   "homepage": "https://github.com/caixie-team/caixie-graphql",
   "repository": {
@@ -20,6 +15,11 @@
   "bugs": {
     "url": "https://github.com/caixie-team/caixie-graphql/issues"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -36,11 +36,11 @@
     "sync-pkg": "esno ./scripts/sync.ts",
     "prepare": "pnpm -r run stub && husky install"
   },
+  "dependencies": {
+    "@cxql/shared": "workspace:0.1.0"
+  },
   "peerDependencies": {
     "graphql": "^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0",
     "vue": "^3.0.0"
-  },
-  "dependencies": {
-    "@cxql/shared": "workspace:0.1.0"
   }
 }

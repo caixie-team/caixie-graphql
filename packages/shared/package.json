@@ -2,7 +2,13 @@
   "name": "@cxql/shared",
   "version": "0.1.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "watch": "tsc -p ./tsconfig.build.json -w",
     "build": "rimraf lib && tsc -p ./tsconfig.build.json",
@@ -10,13 +16,7 @@
     "test": "jest --config ./jest.config.js",
     "ci": "pnpm build"
   },
-  "files": [
-    "lib/**/*"
-  ],
   "devDependencies": {
     "rimraf": "^3.0.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

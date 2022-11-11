@@ -2,16 +2,16 @@
   "compilerOptions": {
     "incremental": true,
     //    "baseUrl": ".",
-//    "rootDir": ".",
+    //    "rootDir": ".",
     "moduleResolution": "node",
     "target": "es2017",
     "lib": ["esnext", "es2017", "dom"],
     "module": "es2015",
     "declaration": true,
     "declarationMap": true,
-//    "declarationDir": "dist/types",
+    //    "declarationDir": "dist/types",
     "sourceMap": true,
-//    "outDir": "dist/lib",
+    //    "outDir": "dist/lib",
     "noImplicitAny": true,
     "strict": true,
     "strictNullChecks": true,
@@ -28,11 +28,11 @@
     "strictPropertyInitialization": false,
     "newLine": "LF",
     "resolveJsonModule": true
-//    "paths": {
-//      "@/*": ["packages/*/src"],
-//      "~/*": ["packages/*/test"]
-//    }
-  },
-//  "include": ["packages/*/src", "packages/*/tests"],
-//  "exclude": ["jest.config.js"]
+    //    "paths": {
+    //      "@/*": ["packages/*/src"],
+    //      "~/*": ["packages/*/test"]
+    //    }
+  }
+  //  "include": ["packages/*/src", "packages/*/tests"],
+  //  "exclude": ["jest.config.js"]
 }

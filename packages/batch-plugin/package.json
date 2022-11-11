@@ -2,6 +2,14 @@
   "name": "@cxql/batch-plugin",
   "version": "0.1.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "watch": "tsc -p ./tsconfig.build.json",
     "build": "rimraf lib && tsc -p ./tsconfig.build.json",
@@ -9,18 +17,10 @@
     "test": "jest --config ./jest.config.js",
     "ci": "pnpm build"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib/**/*"
-  ],
   "devDependencies": {
     "@cxql/core": "workspace:*",
     "@cxql/shared": "workspace:*",
     "graphql": "^16.6.0",
     "rimraf": "^3.0.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }

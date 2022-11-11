@@ -13,5 +13,5 @@ export const fetchMock = {
   },
   teardown() {
     fetchSpy.mockRestore();
-  },
+  }
 };

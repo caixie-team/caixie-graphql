@@ -10,7 +10,7 @@ export function makeObservable(throws = false, simulateError = false) {
         }
 
         if (!simulateError) {
-          next({ data: { message: 'New message', id: counter++ } });
+          next({ data: { message: 'New message', id: (counter += 1) } });
           return;
         }
 
@@ -20,9 +20,9 @@ export function makeObservable(throws = false, simulateError = false) {
       return {
         unsubscribe() {
           clearTimeout(interval);
-        },
+        }
       };
-    },
+    }
   };
 
   return observable;

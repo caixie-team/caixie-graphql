@@ -826,7 +826,6 @@ describe('useQuery()', () => {
     `
       });
     } catch (err) {
-      // eslint-disable-next-line jest/no-conditional-expect
       expect((err as Error).message).toContain('Cannot detect cxql Client');
     }
   });
@@ -1067,6 +1066,7 @@ describe('useQuery()', () => {
   test('cache-and-network updates the reactive data', async () => {
     const posts = [{ id: 1, title: 'First post' }];
     server.use(
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       graphql.query('Posts', (req, res, ctx) => {
         return res(
           ctx.data({

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import flushPromises from 'flush-promises';
 import { mount } from './helpers/mount';
 import { makeObservable, tick } from './helpers/observer';
@@ -113,7 +112,7 @@ test('Re-executes subscriptions if variables changes', async () => {
   await flushPromises();
   expect(subSpy).toHaveBeenCalledTimes(1);
   expect(unSubSpy).not.toHaveBeenCalled();
-  id.value++;
+  id.value += 1;
   await flushPromises();
   expect(unSubSpy).toHaveBeenCalledTimes(1);
   expect(subSpy).toHaveBeenCalledTimes(2);

@@ -6,7 +6,6 @@ importers:
     specifiers:
       '@caixiejs/cli': ^0.1.0
       '@graphql-typed-document-node/core': ^3.1.1
-      '@types/extract-files': ^8.1.1
       '@types/graphql': ^14.5.0
       '@types/jest': ^29.2.2
       '@types/node-fetch': ^2.6.2
@@ -33,7 +32,6 @@ importers:
     devDependencies:
       '@caixiejs/cli': 0.1.0
       '@graphql-typed-document-node/core': 3.1.1_graphql@16.6.0
-      '@types/extract-files': 8.1.1
       '@types/graphql': 14.5.0
       '@types/jest': 29.2.2
       '@types/node-fetch': 2.6.2
@@ -557,10 +555,6 @@ packages:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
     dependencies:
       '@types/ms': 0.7.31
-    dev: true
-
-  /@types/extract-files/8.1.1:
-    resolution: {integrity: sha512-dMJJqBqyhsfJKuK7p7HyyNmki7qj1AlwhUKWx6KrU7i1K2T2SPsUsSUTWFmr/sEM1q8rfR8j5IyUmYrDbrhfjQ==}
     dev: true
 
   /@types/fs-extra/9.0.13:
