@@ -1,22 +1,28 @@
 {
-  "name": "@cxql/shared",
+  "name": "@cxql/uni",
   "version": "1.0.0",
   "description": "",
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "watch": "tsc -p ./tsconfig.build.json -w",
+    "watch": "tsc -p ./tsconfig.build.json",
     "build": "rimraf lib && tsc -p ./tsconfig.build.json",
     "lint": "tslint --fix --project ./",
     "test": "jest --config ./jest.config.js",
     "ci": "pnpm build"
   },
   "devDependencies": {
+    "@cxql/core": "workspace:*",
+    "@cxql/shared": "workspace:*",
+    "@dcloudio/types": "^3.3.3",
+    "@uni-helper/uni-env": "^0.0.3",
+    "graphql": "^16.6.0",
     "rimraf": "^3.0.2"
   }
 }

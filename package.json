@@ -1,6 +1,6 @@
 {
   "name": "cxql",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "支持 vue3、Taro、Uni 的简单高效的 Graphql Client",
   "author": {
