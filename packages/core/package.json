@@ -1,6 +1,6 @@
 {
   "name": "@cxql/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "支持 vue3、Taro、Uni 的简单高效的 Graphql Client",
   "author": {
     "name": "Baisheng",
