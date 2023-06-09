@@ -1,15 +1,16 @@
 // import { getToken } from '~/utils/token';
 import { fetch } from '@cxql/core';
-import Taro from '@tarojs/taro';
-// type Methods = 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
+// import Taro from '@tarojs/taro';
+type Methods = 'OPTIONS' | 'GET' | 'HEAD' | 'POST' | 'PUT' | 'DELETE' | 'TRACE' | 'CONNECT';
 
 export const fetchTaro = fetch({
   fetch(url, options) {
     // const token = getToken();
     return new Promise((resolve, reject) => {
-      Taro.request({
+      uni.request({
         url: url.toString(),
-        method: 'POST',
+        method: options?.method as Methods,
+        // method: 'POST',
         data: options?.body as any,
         header: {
           ...options?.headers
