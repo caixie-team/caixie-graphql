@@ -18,7 +18,7 @@
     "ci": "pnpm build"
   },
   "devDependencies": {
-    "@cxql/core": "workspace:0.1.0",
+    "@cxql/core": "workspace:*",
     "@cxql/shared": "workspace:*",
     "rimraf": "^3.0.2"
   },
